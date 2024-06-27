@@ -36,6 +36,10 @@ body {
   overflow: hidden;
 }
 
+.title {
+  margin: 20px;
+}
+
 .container {
   display: flex;
   justify-content: center;
