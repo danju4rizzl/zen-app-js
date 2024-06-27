@@ -1,7 +1,7 @@
 import './style.css'
 
 import { breathAnimation } from './breathAnimation'
-import { handelWallPaper } from './wallPaper'
+import { getRandomWallpaper, getSearchedWallpaper } from './wallPaper'
 
 /** Note to change the time, it must be changed in the JS and CSS for example 7500 milliseconds in the javascript is 7s in the css file*/
 const totalTIme = 8500
@@ -13,4 +13,5 @@ breathAnimation(totalTIme)
 setInterval(() => breathAnimation(totalTIme), totalTIme)
 
 /** Changes the wall paper of the app dynamically */
-handelWallPaper()
+
+getSearchedWallpaper('Deep Blue Sea')
