@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/bun": "latest",
     "typescript": "^5.2.2",
-    "vite": "^5.3.1",
-    "@types/bun": "latest"
+    "vite": "^5.3.1"
   },
-  "module": "index.ts"
+  "module": "index.ts",
+  "dependencies": {
+    "pexels": "^1.4.0"
+  }
 }

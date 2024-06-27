@@ -1,6 +1,7 @@
 :root {
   --light: rgba(255, 255, 255, 0.87);
   --bg: #224149;
+
   --circle-bg: #010c1f;
   --gradient-bg: conic-gradient(
     #4d8eb3 0%,
@@ -23,10 +24,11 @@
 
 body {
   color: var(--light);
-  background: var(--bg)
-    url(https://images.pexels.com/photos/4737484/pexels-photo-4737484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
-    no-repeat center center;
+  /* url(https://images.pexels.com/photos/4737484/pexels-photo-4737484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+  background: var(--bg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -133,9 +135,10 @@ body {
   display: grid;
   justify-items: center;
   row-gap: 8px;
-  .footer-link {
+
+  .footer-credits a {
     text-decoration: none;
     color: var(--light);
-    text-align: center;
+    font-weight: bold;
   }
 }
